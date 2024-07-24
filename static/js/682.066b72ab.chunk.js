@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkneuraln0ne_portfolio=self.webpackChunkneuraln0ne_portfolio||[]).push([[682],{682:(e,n,o)=>{e.exports=o.p+"static/media/about-me.82157c64f193cefbe303.md"}}]);
