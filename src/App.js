@@ -1,10 +1,17 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Banner from './components/Banner';
 import Footer from './components/Footer';
+import Entry from './components/Entry';
+import EntryDetails from './components/EntryDetails';
 import DynamicLoadingScreen from './components/DynamicLoadingScreen';
 import fogVideo from './assets/animations/fog.mp4';
 import bannerImage from './assets/images/banner-image.png';
 import './App.css';
+import blogImage from './assets/images/blog.png';
+import travelImage from './assets/images/travel.jpeg';
+import aboutMeImage from './assets/images/about-me.jpeg';
+import projectsImage from './assets/images/projects.jpeg';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -43,22 +50,60 @@ function App() {
     return <DynamicLoadingScreen />;
   }
 
+  const entries = [
+    {
+      id: 1,
+      image: blogImage,
+      title: "Web3 Philosophical Blog",
+      description: "Posts about meaning.",
+      link: "/entry/1"
+    },
+    {
+      id: 2,
+      image: travelImage,
+      title: "Personal Travel Blog",
+      description: "It is not simple to travel meaningfuly so here I explore what those travels actually mean to me.",
+      link: "https://www.instagram.com/eigenwerter/"
+    },
+    {
+      id: 3,
+      image: aboutMeImage,
+      title: "About me",
+      description: "",
+      link: "/entry/3"
+    },
+  ];
+
   return (
-    <div className="App">
-      <Banner />
-      <div className="fog-overlay">
-        <video autoPlay loop muted playsInline className="fog-video">
-          <source src={fogVideo} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+    <Router>
+      <div className="App">
+        <Banner />
+        <div className="fog-overlay">
+          <video autoPlay loop muted playsInline className="fog-video">
+            <source src={fogVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <Routes>
+          <Route path="/" element={
+            <div className="content">
+              <h2>> Welcome</h2>
+              {entries.map((entry) => (
+                <Entry
+                  key={entry.id}
+                  image={entry.image}
+                  title={entry.title}
+                  description={entry.description}
+                  link={entry.link}
+                />
+              ))}
+            </div>
+          } />
+          <Route path="/entry/:id" element={<EntryDetails />} />
+        </Routes>
+        <Footer />
       </div>
-      <div className="content">
-        <h2>About Me</h2>
-        <p>This is where your content will start...</p>
-        {/* Add more content here */}
-      </div>
-      <Footer />
-    </div>
+    </Router>
   );
 }
 

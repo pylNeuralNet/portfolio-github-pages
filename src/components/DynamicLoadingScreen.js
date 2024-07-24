@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import './DynamicLoadingScreen.css';
 
-const GRID_SIZE = 20;
+const GRID_SIZE = 15;
 const CHANGE_INTERVAL = 100; // 0.3 seconds
-const WORDS = ['SACRED', 'SPIRITUAL', 'LOADING', 'EXPERIENCE', 'STORY'];
+const WORDS = ['SACRED', 'SPIRITUAL', 'LOADING', 'EXPERIENCE', 'E/ACC', 'SINGULARITY', 'POSTHUMANISM'];
 
 function DynamicLoadingScreen() {
   const [grid, setGrid] = useState([]);
@@ -12,9 +12,9 @@ function DynamicLoadingScreen() {
     return String.fromCharCode(65 + Math.floor(Math.random() * 26));
   };
 
-  const getRandomColor = () => { // I changed my mind, now unused
-    return `rgb(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255})`;
-  };
+  const getBloodyRedColor = () => {
+    return `rgb(129, 0, 0)`;
+  }
 
   const insertRandomWord = useCallback((grid) => {
     const word = WORDS[Math.floor(Math.random() * WORDS.length)];
@@ -29,14 +29,14 @@ function DynamicLoadingScreen() {
   const updateRandomCell = useCallback((grid) => {
     const row = Math.floor(Math.random() * GRID_SIZE);
     const col = Math.floor(Math.random() * GRID_SIZE);
-    grid[row][col] = { char: getRandomChar(), color: getRandomColor() };
+    grid[row][col] = { char: getRandomChar(), color: getBloodyRedColor() };
   }, []);
 
   useEffect(() => {
     const initialGrid = Array(GRID_SIZE).fill().map(() => 
       Array(GRID_SIZE).fill().map(() => ({
         char: getRandomChar(),
-        color: getRandomColor(),
+        color: getBloodyRedColor(),
       }))
     );
     setGrid(initialGrid);
@@ -44,7 +44,7 @@ function DynamicLoadingScreen() {
     const intervalId = setInterval(() => {
       setGrid(prevGrid => {
         const newGrid = [...prevGrid];
-        if (Math.random() < 0.1) { // 10% chance to insert a word
+        if (Math.random() < 0.2) { // 10% chance to insert a word
           insertRandomWord(newGrid);
         } else {
           updateRandomCell(newGrid);
