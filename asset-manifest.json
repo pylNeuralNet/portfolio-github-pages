@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portfolio-github-pages/neuraln0ne-portfolio/static/css/main.edbd0b16.css",
+    "main.js": "/portfolio-github-pages/neuraln0ne-portfolio/static/js/main.f9334a1c.js",
+    "static/js/453.6de76cd7.chunk.js": "/portfolio-github-pages/neuraln0ne-portfolio/static/js/453.6de76cd7.chunk.js",
+    "static/media/banner-image.png": "/portfolio-github-pages/neuraln0ne-portfolio/static/media/banner-image.a7cf20dbad1ebb2478e1.png",
+    "static/media/8bitOperatorPlus-Regular.ttf": "/portfolio-github-pages/neuraln0ne-portfolio/static/media/8bitOperatorPlus-Regular.325b9b8522af8a950cb3.ttf",
+    "index.html": "/portfolio-github-pages/neuraln0ne-portfolio/index.html",
+    "main.edbd0b16.css.map": "/portfolio-github-pages/neuraln0ne-portfolio/static/css/main.edbd0b16.css.map",
+    "main.f9334a1c.js.map": "/portfolio-github-pages/neuraln0ne-portfolio/static/js/main.f9334a1c.js.map",
+    "453.6de76cd7.chunk.js.map": "/portfolio-github-pages/neuraln0ne-portfolio/static/js/453.6de76cd7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.edbd0b16.css",
+    "static/js/main.f9334a1c.js"
+  ]
+}
