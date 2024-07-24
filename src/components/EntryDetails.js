@@ -7,7 +7,7 @@ function EntryDetails() {
   const [content, setContent] = React.useState('');
 
   React.useEffect(() => {
-    if (id === '1') {
+    if (id === '3') {
       import('../content/blog-posts/about-me.md')
         .then(res => {
           fetch(res.default)

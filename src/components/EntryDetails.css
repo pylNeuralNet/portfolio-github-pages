@@ -6,13 +6,26 @@
     border-radius: 10px;
   }
   
-  .entry-details h1, .entry-details h2, .entry-details h3 {
+  /* Target all headings */
+  .entry-details h1,
+  .entry-details h2,
+  .entry-details h3,
+  .entry-details h4,
+  .entry-details h5,
+  .entry-details h6 {
     color: #ffffff;
+    text-align: center; /* Keep headings centered */
   }
   
-  .entry-details p {
+  /* Target paragraphs and other block-level elements */
+  .entry-details p,
+  .entry-details ul,
+  .entry-details ol,
+  .entry-details blockquote,
+  .entry-details table {
     color: #e0e0e0;
     line-height: 1.6;
+    text-align: right; /* Align text to the right */
   }
   
   .entry-details a {
@@ -23,3 +36,22 @@
   .entry-details a:hover {
     text-decoration: underline;
   }
+  
+  /* Ensure list items are properly aligned */
+  .entry-details ul,
+  .entry-details ol {
+    padding-right: 20px;
+    padding-left: 0;
+  }
+  
+  /* Keep code blocks left-aligned for readability */
+  .entry-details pre,
+  .entry-details code {
+    text-align: left;
+    direction: ltr;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1em;
+    border-radius: 5px;
+  }
+  

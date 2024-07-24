@@ -16,7 +16,7 @@ body, html {
   text-align: center;
 }
 
-@keyframes fogGlow {
+/* @keyframes fogGlow {
   0%, 100% { 
     box-shadow: 
       0 -50px 70px 10px rgba(255, 255, 255, 0.2),
@@ -27,7 +27,7 @@ body, html {
       0 -50px 100px 20px rgba(255, 255, 255, 0.3),
       0 50px 100px 20px rgba(255, 255, 255, 0.3);
   }
-}
+} */
 
 .fog-overlay {
   position: absolute;
@@ -46,17 +46,27 @@ body, html {
   opacity: 0.5; /* Adjust this value to control the fog intensity */
 }
 
-.content {
+/* .content {
   position: relative;
   z-index: 1;
   padding: 2rem;
   background-color: rgba(18, 18, 18, 0.8);
   animation: fogGlow 8s infinite ease-in-out;
+} */
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  background-color: rgba(18, 18, 18, 0.8);
+  /* Other existing styles */
 }
 
 .entries-container {
   max-width: 800px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4rem; /* This adds space below the banner */
 }
 
 .content h2 {
@@ -64,7 +74,7 @@ body, html {
   margin-bottom: 2rem;
 }
 
-.content::before {
+/* .content::before {
   content: '';
   position: absolute;
   top: 0;
@@ -79,7 +89,7 @@ body, html {
     rgba(255, 255, 255, 0.1) 100%
   );
   pointer-events: none;
-}
+} */
 
 .loading-screen {
   display: flex;
