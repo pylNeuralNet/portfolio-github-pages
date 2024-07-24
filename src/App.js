@@ -56,7 +56,7 @@ function App() {
       image: blogImage,
       title: "Web3 Philosophical Blog",
       description: "Posts about meaning.",
-      link: "/entry/1"
+      link: "https://mirror.xyz/0xEDC1fdbD19744685BCB4d04Be98CaD15f31e5b23/j3_wgoGZjCT61xRh5aS7R9JROICCJyjqRO9lKisDXsA"
     },
     {
       id: 2,
@@ -84,23 +84,25 @@ function App() {
             Your browser does not support the video tag.
           </video>
         </div>
-        <Routes>
-          <Route path="/" element={
-            <div className="content">
-              <h2>> Welcome</h2>
-              {entries.map((entry) => (
-                <Entry
-                  key={entry.id}
-                  image={entry.image}
-                  title={entry.title}
-                  description={entry.description}
-                  link={entry.link}
-                />
-              ))}
-            </div>
-          } />
-          <Route path="/entry/:id" element={<EntryDetails />} />
-        </Routes>
+        <div className="content">
+          <Routes>
+            <Route path="/" element={
+              <div className="entries-container">
+                {/* <h2>Welcome</h2> */}
+                {entries.map((entry) => (
+                  <Entry
+                    key={entry.id}
+                    image={entry.image}
+                    title={entry.title}
+                    description={entry.description}
+                    link={entry.link}
+                  />
+                ))}
+              </div>
+            } />
+            <Route path="/entry/:id" element={<EntryDetails />} />
+          </Routes>
+        </div>
         <Footer />
       </div>
     </Router>

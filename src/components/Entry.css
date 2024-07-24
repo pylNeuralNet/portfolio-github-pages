@@ -1,8 +1,9 @@
 .entry {
     margin-bottom: 2rem;
-    border-top: 2px solid;
-    border-image: linear-gradient(to right, transparent, #ffffff, transparent) 1;
     padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   }
   
   .entry-link {

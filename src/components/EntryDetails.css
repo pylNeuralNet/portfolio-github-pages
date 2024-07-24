@@ -1,0 +1,25 @@
+.entry-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+  }
+  
+  .entry-details h1, .entry-details h2, .entry-details h3 {
+    color: #ffffff;
+  }
+  
+  .entry-details p {
+    color: #e0e0e0;
+    line-height: 1.6;
+  }
+  
+  .entry-details a {
+    color: #4da6ff;
+    text-decoration: none;
+  }
+  
+  .entry-details a:hover {
+    text-decoration: underline;
+  }
