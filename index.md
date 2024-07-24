@@ -1,8 +1,22 @@
-# Welcome to Neuraln0ne's Retro Portfolio
+---
+layout: default
+title: Neuraln0ne's Portfolio
+---
 
-## About Me
-I'm a developer with a passion for retro aesthetics and cutting-edge technology.
+# Neuraln0ne
 
-## Navigation
-- [Articles](articles.md)
-- [NFT Art](nft-art.md)
+## Welcome to the Future
+
+[Home](#home) | [Articles](#articles) | [NFT Art](#nft-art)
+
+### Home {#home}
+
+Welcome to my cyberpunk portfolio.
+
+### Articles {#articles}
+
+Here are my latest articles...
+
+### NFT Art {#nft-art}
+
+Check out my latest NFT creations...
