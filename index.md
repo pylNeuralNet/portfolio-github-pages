@@ -8,7 +8,7 @@ title: Neuraln0ne's Portfolio
 ## Projects
 
 {% include entry.html 
-   image="path/to/image1.jpg"
+   image="assets/images/banner-image.png"
    title="Project 1"
    description="Description of Project 1" %}
 
