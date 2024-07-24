@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio-github-pages/static/css/main.be4abcbd.css",
-    "main.js": "/portfolio-github-pages/static/js/main.dcf36150.js",
+    "main.css": "/portfolio-github-pages/static/css/main.6ca6e40c.css",
+    "main.js": "/portfolio-github-pages/static/js/main.0945a221.js",
     "static/js/453.6de76cd7.chunk.js": "/portfolio-github-pages/static/js/453.6de76cd7.chunk.js",
     "static/media/banner-image.png": "/portfolio-github-pages/static/media/banner-image.a7cf20dbad1ebb2478e1.png",
+    "static/media/fog.mp4": "/portfolio-github-pages/static/media/fog.5af489e1b02232ef0fad.mp4",
+    "static/media/blog.png": "/portfolio-github-pages/static/media/blog.0ee76bd1659901e9bc27.png",
+    "static/media/PoiretOne-Regular.ttf": "/portfolio-github-pages/static/media/PoiretOne-Regular.2d5fb32d52ffaed4fde4.ttf",
     "static/media/8bitOperatorPlus-Regular.ttf": "/portfolio-github-pages/static/media/8bitOperatorPlus-Regular.325b9b8522af8a950cb3.ttf",
+    "static/media/travel.jpeg": "/portfolio-github-pages/static/media/travel.7425aa537d39abf85039.jpeg",
+    "static/media/about-me.jpeg": "/portfolio-github-pages/static/media/about-me.b7c3ebaf3e6f3cf77327.jpeg",
+    "static/media/projects.jpeg": "/portfolio-github-pages/static/media/projects.f6d0eae39af7f18a3903.jpeg",
     "index.html": "/portfolio-github-pages/index.html",
-    "main.be4abcbd.css.map": "/portfolio-github-pages/static/css/main.be4abcbd.css.map",
-    "main.dcf36150.js.map": "/portfolio-github-pages/static/js/main.dcf36150.js.map",
+    "main.6ca6e40c.css.map": "/portfolio-github-pages/static/css/main.6ca6e40c.css.map",
+    "main.0945a221.js.map": "/portfolio-github-pages/static/js/main.0945a221.js.map",
     "453.6de76cd7.chunk.js.map": "/portfolio-github-pages/static/js/453.6de76cd7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.be4abcbd.css",
-    "static/js/main.dcf36150.js"
+    "static/css/main.6ca6e40c.css",
+    "static/js/main.0945a221.js"
   ]
 }
