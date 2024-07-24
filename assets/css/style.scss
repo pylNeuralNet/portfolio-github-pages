@@ -1,14 +1,18 @@
 @import "{{ site.theme }}";
 
+@font-face {
+    font-family: 'Multivac';
+    src: url('../fonts/multivac/multivac-ghost.ttf') format('truetype');
+}
+
 :root {
-    --primary-color: #ff00ff;
-    --secondary-color: #00ffff;
     --background-color: #000011;
     --text-color: #ffffff;
+    --accent-color: #ff00ff;
 }
 
 body {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Multivac', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
     margin: 0;
@@ -16,12 +20,12 @@ body {
 }
 
 header {
-    position: relative;
+    height: 100vh;
 }
 
 .banner {
     position: relative;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -43,57 +47,46 @@ header {
     justify-content: center;
 }
 
-.overlay h1 {
+h1 {
     font-size: 5rem;
-    color: var(--primary-color);
-    text-shadow: 0 0 10px var(--secondary-color);
-}
-
-.fixed-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 17, 0.8);
-    padding: 1rem;
-    z-index: 1000;
-}
-
-.signature {
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--primary-color);
+    color: var(--text-color);
+    text-shadow: 0 0 10px var(--accent-color);
 }
 
 main {
     padding: 2rem;
 }
 
-h1, h2, h3 {
-    color: var(--primary-color);
+.entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
-a {
-    color: var(--secondary-color);
-    text-decoration: none;
+.entry-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1rem;
 }
 
-a:hover {
-    text-decoration: underline;
+.entry-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.entry-content {
+    flex: 1;
+}
+
+h2, h3 {
+    color: var(--accent-color);
 }
 
 footer {
-    background: rgba(0, 0, 17, 0.8);
     text-align: center;
     padding: 1rem;
-}
-
-// Custom 'A' styling
-h1::first-letter, h2::first-letter, h3::first-letter, .signature::first-letter {
-    font-family: 'Triangular', 'Orbitron', sans-serif;
-}
-
-@font-face {
-    font-family: 'Triangular';
-    src: url('fonts/multivac/multivac-ghost.tff') format('tff');
+    background-color: rgba(255, 255, 255, 0.1);
 }

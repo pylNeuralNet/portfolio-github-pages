@@ -5,18 +5,19 @@ title: Neuraln0ne's Portfolio
 
 # Neuraln0ne
 
-## Welcome to the Future
+## Projects
 
-[Home](#home) | [Articles](#articles) | [NFT Art](#nft-art)
+{% include entry.html 
+   image="path/to/image1.jpg"
+   title="Project 1"
+   description="Description of Project 1" %}
 
-### Home {#home}
+{% include entry.html 
+   image="path/to/image2.jpg"
+   title="Project 2"
+   description="Description of Project 2" %}
 
-Welcome to my cyberpunk portfolio.
-
-### Articles {#articles}
-
-Here are my latest articles...
-
-### NFT Art {#nft-art}
-
-Check out my latest NFT creations...
+{% include entry.html 
+   image="path/to/image3.jpg"
+   title="Project 3"
+   description="Description of Project 3" %}
