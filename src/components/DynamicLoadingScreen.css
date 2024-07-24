@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'MultivacInterference';
+    src: url('../assets/fonts/PoiretOne-Regular.ttf') format('truetype');
+  }
+  
+  .dynamic-loading-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    font-family: 'MultivacInterference', monospace;
+    font-size: 3vw;
+    line-height: 1;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .row span {
+    transition: color 0.3s ease;
+    width: 1em;
+    height: 1em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
