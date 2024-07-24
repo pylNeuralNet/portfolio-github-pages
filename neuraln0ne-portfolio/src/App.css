@@ -1,0 +1,55 @@
+/* src/App.css */
+@font-face {
+  font-family: '8BitOperator';
+  src: url('assets/fonts/8-bit-operator/8bitOperatorPlus-Regular.ttf') format('truetype');
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: '8BitOperator', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+@keyframes fogGlow {
+  0%, 100% { 
+    box-shadow: 
+      0 -50px 70px 10px rgba(255, 255, 255, 0.2),
+      0 50px 70px 10px rgba(255, 255, 255, 0.2);
+  }
+  50% { 
+    box-shadow: 
+      0 -50px 100px 20px rgba(255, 255, 255, 0.3),
+      0 50px 100px 20px rgba(255, 255, 255, 0.3);
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  background-color: rgba(18, 18, 18, 0.8);
+  animation: fogGlow 8s infinite ease-in-out;
+}
+
+.content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 10%,
+    rgba(255, 255, 255, 0.1) 90%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  pointer-events: none;
+}
