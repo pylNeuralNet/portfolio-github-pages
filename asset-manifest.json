@@ -1,25 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.0012b370.css",
-    "main.js": "/static/js/main.736e364a.js",
-    "static/js/682.7fa79ff8.chunk.js": "/static/js/682.7fa79ff8.chunk.js",
-    "static/js/453.bb7c8408.chunk.js": "/static/js/453.bb7c8408.chunk.js",
-    "static/media/banner-image.png": "/static/media/banner-image.a7cf20dbad1ebb2478e1.png",
-    "static/media/fog.mp4": "/static/media/fog.5af489e1b02232ef0fad.mp4",
-    "static/media/blog.png": "/static/media/blog.0ee76bd1659901e9bc27.png",
-    "static/media/PoiretOne-Regular.ttf": "/static/media/PoiretOne-Regular.2d5fb32d52ffaed4fde4.ttf",
-    "static/media/8bitOperatorPlus-Regular.ttf": "/static/media/8bitOperatorPlus-Regular.325b9b8522af8a950cb3.ttf",
-    "static/media/travel.jpeg": "/static/media/travel.7425aa537d39abf85039.jpeg",
-    "static/media/about-me.jpeg": "/static/media/about-me.b7c3ebaf3e6f3cf77327.jpeg",
-    "static/media/projects.jpeg": "/static/media/projects.f6d0eae39af7f18a3903.jpeg",
-    "static/media/about-me.md": "/static/media/about-me.82157c64f193cefbe303.md",
-    "index.html": "/index.html",
-    "main.0012b370.css.map": "/static/css/main.0012b370.css.map",
-    "main.736e364a.js.map": "/static/js/main.736e364a.js.map",
-    "453.bb7c8408.chunk.js.map": "/static/js/453.bb7c8408.chunk.js.map"
+    "main.css": "/home/static/css/main.1e751839.css",
+    "main.js": "/home/static/js/main.ebe90181.js",
+    "static/js/488.164fdb40.chunk.js": "/home/static/js/488.164fdb40.chunk.js",
+    "static/media/banner-image.png": "/home/static/media/banner-image.a7cf20dbad1ebb2478e1.png",
+    "static/media/fog.mp4": "/home/static/media/fog.5af489e1b02232ef0fad.mp4",
+    "static/media/blog.png": "/home/static/media/blog.0ee76bd1659901e9bc27.png",
+    "static/media/PoiretOne-Regular.ttf": "/home/static/media/PoiretOne-Regular.2d5fb32d52ffaed4fde4.ttf",
+    "static/media/8bitOperatorPlus-Regular.ttf": "/home/static/media/8bitOperatorPlus-Regular.325b9b8522af8a950cb3.ttf",
+    "static/media/travel.jpeg": "/home/static/media/travel.7425aa537d39abf85039.jpeg",
+    "static/media/about-me.jpeg": "/home/static/media/about-me.b7c3ebaf3e6f3cf77327.jpeg",
+    "static/media/projects.jpeg": "/home/static/media/projects.f6d0eae39af7f18a3903.jpeg",
+    "index.html": "/home/index.html",
+    "main.1e751839.css.map": "/home/static/css/main.1e751839.css.map",
+    "main.ebe90181.js.map": "/home/static/js/main.ebe90181.js.map",
+    "488.164fdb40.chunk.js.map": "/home/static/js/488.164fdb40.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0012b370.css",
-    "static/js/main.736e364a.js"
+    "static/css/main.1e751839.css",
+    "static/js/main.ebe90181.js"
   ]
 }
