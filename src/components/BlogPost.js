@@ -1,14 +1,21 @@
-// src/components/BlogPost.js
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
-import PropTypes from 'prop-types';
+import { useParams } from 'react-router-dom';
+import blogPosts from '../content/blog-posts/index';
 
-const BlogPost = ({ content }) => {
-  return <ReactMarkdown>{content}</ReactMarkdown>;
-};
+const BlogPost = () => {
+  const { slug } = useParams();
+  const post = blogPosts.find(post => post.slug === slug);
 
-BlogPost.propTypes = {
-  content: PropTypes.string.isRequired,
+  if (!post) {
+    return <div>Post not found</div>;
+  }
+
+  return (
+    <div className="blog-post">
+      <h1>{post.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: post.content }} />
+    </div>
+  );
 };
 
 export default BlogPost;

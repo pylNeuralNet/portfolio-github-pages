@@ -40,7 +40,7 @@ const Banner = () => {
 
   return (
     <div ref={bannerRef} className="banner" style={{ backgroundImage: `url(${backgroundImage})` }}>
-      <h1 ref={titleRef}>Adam - Portfolio</h1>
+      <h1 ref={titleRef}>Personal Webpage ~Adam</h1>
     </div>
   );
 };

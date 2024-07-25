@@ -59,14 +59,16 @@ body, html {
   z-index: 1;
   padding: 2rem;
   background-color: rgba(18, 18, 18, 0.8);
-  /* Other existing styles */
+  padding-top: 4rem;
 }
 
 .entries-container {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 4rem; /* This adds space below the banner */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 2rem auto 0;
+  padding: 0 1rem;
 }
 
 .content h2 {
