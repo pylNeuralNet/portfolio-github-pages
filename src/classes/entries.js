@@ -14,7 +14,7 @@ const entries = [
       ]
     },
     {
-      id: 2,
+      id: 8,
       type: 'image',
       image: blogImage,
       title: "Web3 Philosophical Blog🖱️",
@@ -22,7 +22,7 @@ const entries = [
       link: "https://mirror.xyz/0xEDC1fdbD19744685BCB4d04Be98CaD15f31e5b23/j3_wgoGZjCT61xRh5aS7R9JROICCJyjqRO9lKisDXsA"
     },
     {
-      id: 3,
+      id: 9,
       type: 'image',
       image: travelImage,
       title: "Personal Travel Blog🖱️",
@@ -30,35 +30,35 @@ const entries = [
       link: "https://www.instagram.com/eigenwerter/"
     },
     {
-      id: 4,
+      id: 2,
       type: 'description',
       title: "Tech skils",
       description: "C/C++ dev, 3 years exp \n(multithreaded Linux, telecom)\n+Java Jenkins CI/CD\n+SEI CERT secure practices\n+GoF Design Patterns",
     },
     {
-      id: 5,
+      id: 3,
       type: 'description',
       title: "Scientific skills",
       description: "*AI Accelerators (developing a new brain-inspired latency &bandwidth hardrware optimization), *Template Metaprogramming &related C++ Optimizations, *Brain-inspired non-von-Neumann architectures, *Human brain modeling based on Neuralink Data, *Deep Learning for Medical Images decision-making",
     },
     {
-        id: 6,
+        id: 7,
         type: 'image',
         title: 'Date me',
         description: 'hmu. email/ln/x/dc/signal PS fyi I change countries often until the end of Phd',
         image: projectsImage
     },
     {
-        id: 7,
+        id: 6,
         type: 'description',
         title: "Game Design",
         description: "Open World low-budged Open Source 3D MMO RPG with infinite possibilities (the whole world is an evolutionary algorithm so skills, factions and NPC levels emerge naturally). Thus far: ✓client<-2D positions of NPCs->server (TCP/IP soc), setup for render (directly from GPU)",
       },
       {
-        id: 9,
+        id: 5,
         type: 'description',
         title: "Project: this webpage🖱️",
-        description: "Took me 1 day, w React. I now have a much better idea for the UI - just using the Banner as tiles!",
+        description: "Took me 1 day, w React. I now have a much better idea for the UI - just using the image from the top of the pg (the Banner) as tiles! And some of them half open, that would be epic.",
         link: 'https://github.com/pylNeuralNet/portfolio-github-pages'
       },
       ...blogPosts.map(post => ({

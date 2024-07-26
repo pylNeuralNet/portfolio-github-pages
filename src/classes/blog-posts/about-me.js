@@ -2,7 +2,7 @@
 import aboutMeImage from '../../assets/images/about-me.jpeg';
 
 const post1 = {
-  id: 8,
+  id: 4,
   slug: 'about-me',
   title: 'About Me🖱️',
   excerpt: 'Philosophy, interests, current scientific work.',
