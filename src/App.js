@@ -2,10 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Banner from './components/Banner';
 import Footer from './components/Footer';
-import Entry from './components/Entry';
-import EntryDetails from './components/EntryDetails';
-import EntryPost from './components/EntryPost';
-import Post from './components/Post';
 import BlogPost from './components/BlogPost';
 import TileGrid from './components/TileGrid';
 import DynamicLoadingScreen from './components/DynamicLoadingScreen';
@@ -51,7 +47,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <Router basename="/portfolio-github-pages">
       <div className="App">
         <Banner />
         <div className="fog-overlay">
