@@ -1,6 +1,7 @@
 import React from 'react';
 import './Tiles.css';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Tile = ({ children, color, link, flipDirection }) => (
     <div className={`tile ${flipDirection}`}>
@@ -67,14 +68,16 @@ const Tile = ({ children, color, link, flipDirection }) => (
     </Tile>
   );
 
-  export const BlogTile = ({ title, excerpt, slug, color, flipDirection }) => (
-    <Tile color={color} flipDirection={flipDirection}>
-      <div className="tile-content">
-        <h3 className="tile-title">{title}</h3>
-        <p className="tile-description">{excerpt}</p>
-      </div>
-      <div className="tile-content">
-        <Link to={`/blog/${slug}`} className="read-more">Read Full Post</Link>
-      </div>
-    </Tile>
-  );
+  export const BlogTile = ({ title, excerpt, slug, image, color, flipDirection }) => {
+    return (
+      <Tile color={color} flipDirection={flipDirection}>
+        <div className="tile-content">
+          <h3 className="tile-title">{title}</h3>
+          <p className="tile-description">{excerpt}</p>
+        </div>
+        <Link to={`/blog/${slug}`} className="tile-content">
+          <img src={image} alt={title} className="tile-icon" />
+        </Link>
+      </Tile>
+    );
+  };

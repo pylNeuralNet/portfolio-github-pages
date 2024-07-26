@@ -1,14 +1,13 @@
 import blogImage from '../assets/images/blog.png';
 import travelImage from '../assets/images/travel.jpeg';
-import aboutMeImage from '../assets/images/about-me.jpeg';
 import projectsImage from '../assets/images/projects.jpeg';
-import blogPosts from '../content/blog-posts'
+import blogPosts from './blog-posts'
 
 const entries = [
     {
       id: 1,
       type: 'contact',
-      title: "Contact Me",
+      title: "Contact Me🖱️",
       contactLinks: [
         { name: "Email", url: "n0ne.official.author@gmail.com" },
         { name: "LinkedIn", url: "https://www.linkedin.com/in/adam-pylanski/" },
@@ -18,7 +17,7 @@ const entries = [
       id: 2,
       type: 'image',
       image: blogImage,
-      title: "Web3 Philosophical Blog",
+      title: "Web3 Philosophical Blog🖱️",
       description: "Posts about meaning.",
       link: "https://mirror.xyz/0xEDC1fdbD19744685BCB4d04Be98CaD15f31e5b23/j3_wgoGZjCT61xRh5aS7R9JROICCJyjqRO9lKisDXsA"
     },
@@ -26,7 +25,7 @@ const entries = [
       id: 3,
       type: 'image',
       image: travelImage,
-      title: "Personal Travel Blog",
+      title: "Personal Travel Blog🖱️",
       description: "It is not simple to travel meaningfully so here I explore what those travels actually mean to me.",
       link: "https://www.instagram.com/eigenwerter/"
     },
@@ -46,7 +45,7 @@ const entries = [
         id: 6,
         type: 'image',
         title: 'Date me',
-        description: 'hmu. PS fyi I change countries often until the end of Phd',
+        description: 'hmu. email/ln/x/dc/signal PS fyi I change countries often until the end of Phd',
         image: projectsImage
     },
     {
@@ -55,12 +54,20 @@ const entries = [
         title: "Game Design",
         description: "Open World low-budged Open Source 3D MMO RPG with infinite possibilities (the whole world is an evolutionary algorithm so skills, factions and NPC levels emerge naturally). Thus far: ✓client<-2D positions of NPCs->server (TCP/IP soc), setup for render (directly from GPU)",
       },
+      {
+        id: 9,
+        type: 'description',
+        title: "Project: this webpage🖱️",
+        description: "Took me 1 day, w React. I now have a much better idea for the UI - just using the Banner as tiles!",
+        link: 'https://github.com/pylNeuralNet/portfolio-github-pages'
+      },
       ...blogPosts.map(post => ({
         id: post.id,
         type: 'blog',
         title: post.title,
         excerpt: post.excerpt,
-        slug: post.slug
+        slug: post.slug,
+        image: post.image
       }))
     ];
 
